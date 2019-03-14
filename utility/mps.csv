@@ -1,74 +1,3 @@
-# File: hansard_words.R
-# Description: Stop words to be removed from hansard text
-# Author: Noel Dempsey
-# Date: 2018-12-02
-
-parly_stop_words <- c(
-  
-  "hon", 
-  "government", 
-  "friend", 
-  "house", 
-  "debate",
-  "time",
-  "gentleman",
-  "constituency",
-  "constituents",
-  "lady",
-  "secretary",
-  "government",
-  "governments",
-  "government’s",
-  "government’s",
-  "government's",
-  "madam",
-  "minister",
-  "ministers",
-  "minister's",
-  "minister’s",
-  "minister’s",
-  "leader",
-  "committee",
-  "speaker",
-  "prime",
-  "speech",
-  "questions",
-  "question",
-  "parliament", 
-  "commons",
-  "lords",
-  "chamber",
-  "dr",
-  "st",
-  "rt",
-  "agree",
-  "ms",
-  "sir",
-  "office",
-  "department",
-  "intervention",
-  "ago", # other
-  "intervention",
-  "learned",
-  "zealand",
-  "zealanders",
-  "new",
-  "set",
-  "lot"
-
-)
-
-party_stop_words <- c(
-  "act",
-  "green",
-  "labour",
-  "national",
-  "nzf",
-  "first"
-)
-
-mp_last_stop_words <- c(
- 
 "adams",
 "allan",
 "andersen",
@@ -186,16 +115,14 @@ mp_last_stop_words <- c(
 "yang",
 "young",
 "yule"
-)
 
 
 
-mp_first_stop_words <- c(
 "amy",
 "kiritapu",
 "ginny",
 "jacinda",
-"kanwaljit",
+"kanwaljit"
 "singh",
 "darroch",
 "maggie",
@@ -316,35 +243,3 @@ william",
 "jian",
 "jonathan",
 "lawrence"
-)
-
-month_stop_words <- c(
-  
-  "january", 
-  "february",
-  "march",
-  "april",
-  "may", 
-  "june", 
-  "july",
-  "august", 
-  "september", 
-  "october",
-  "november", 
-  "december"
-
-)
-  
-mp_first_stop_words <- enframe(mp_first_stop_words, name = NULL)
-mp_last_stop_words  <- enframe(mp_last_stop_words, name = NULL)
-parly_stop_words    <- enframe(parly_stop_words, name = NULL)
-party_stop_words    <- enframe(party_stop_words, name = NULL)
-month_stop_words    <- enframe(month_stop_words, name = NULL)
-
-mp_first_stop_words <- rename(mp_first_stop_words, word = value)
-mp_last_stop_words  <- rename(mp_last_stop_words, word = value)
-parly_stop_words    <- rename(parly_stop_words, word = value)
-party_stop_words    <- rename(party_stop_words, word = value)
-month_stop_words    <- rename(month_stop_words, word = value) 
-
-

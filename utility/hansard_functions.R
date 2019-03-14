@@ -33,11 +33,9 @@ hansard_file <- function() {
   
 }
 
-hansard_date <- function() {
-  
-  day <- hansard_main() %>% 
-    str_sub(start = 15, end = 24)
-
+hansard_link <- function() {
+  read_html("https://www.parliament.nz/en/pb/hansard-debates/rhr/") %>%
+     html_node("h2.hansard__heading a") %>% html_attr("href")
 }
 
  hansard_hexs <- function() {
