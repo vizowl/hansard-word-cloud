@@ -56,7 +56,10 @@ parly_stop_words <- c(
   "set",
   "lot",
   "bill",
-  "legislation"
+  "legislation",
+  "te",
+  "hansard",
+  "inserted"
 
 )
 
