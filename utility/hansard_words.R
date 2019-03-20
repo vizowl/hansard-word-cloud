@@ -54,7 +54,9 @@ parly_stop_words <- c(
   "zealanders",
   "new",
   "set",
-  "lot"
+  "lot",
+  "bill",
+  "legislation"
 
 )
 
@@ -215,7 +217,7 @@ mp_first_stop_words <- c(
 "clare",
 "marama",
 "kelvin",
-"Jacqui",
+"jacqui",
 "matt",
 "sarah",
 "ruth",

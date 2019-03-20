@@ -7,4 +7,5 @@
 .httr-oauth
 check.txt
 output/
-auth.R
+auth.Rpackages.rds
+packages.rds
