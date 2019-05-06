@@ -77,7 +77,7 @@ run <- function(hansard_a) {
 }
 
 latests <- read_html("https://www.parliament.nz/en/pb/hansard-debates/rhr/") %>%
-  html_nodes("h2.hansard__heading a")
+  html_nodes("h2.hansard__heading a") 
 
 runs <- map_chr(latests, run)
 write_csv(enframe(runs, name=NULL, value="Processed"), 'processed.csv')
